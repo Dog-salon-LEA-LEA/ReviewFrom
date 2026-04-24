@@ -327,11 +327,12 @@
       });
     }
 
+    // コピーしてGoogleマップを開く処理
     function copyAndOpenMap() {
       const text = document.getElementById('reviewText').innerText;
       
-      // ★LEA LEAのPlace IDに書き換えました
-      const placeId = "ChIJ21AYVwDpGGARDAl9d5s05LQ";
+      // ★正しい方のPlace IDに書き換えました
+      const placeId = "ChIJI70sKlDpGGARoWNPo5lqe54";
       const url = "https://search.google.com/local/writereview?placeid=" + placeId;
       
       navigator.clipboard.writeText(text).then(() => {
